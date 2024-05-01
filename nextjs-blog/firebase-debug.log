@@ -1,0 +1,122 @@
+[debug] [2024-04-29T13:39:50.875Z] ----------------------------------------------------------------------
+[debug] [2024-04-29T13:39:50.878Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ICS4U-Jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-29T13:39:50.879Z] CLI Version:   13.7.5
+[debug] [2024-04-29T13:39:50.879Z] Platform:      win32
+[debug] [2024-04-29T13:39:50.879Z] Node Version:  v21.6.2
+[debug] [2024-04-29T13:39:50.879Z] Time:          Mon Apr 29 2024 09:39:50 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-04-29T13:39:50.879Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-29T13:39:50.888Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-29T13:39:50.889Z] > authorizing via signed-in user (pulleyblankjacob@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ICS4U-Jacob\Documents\test\Uberkenny\nextjs-blog
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-29T13:40:24.956Z] > refreshing access token with scopes: []
+[debug] [2024-04-29T13:40:24.958Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-29T13:40:24.958Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-29T13:40:25.226Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-29T13:40:25.226Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-29T13:40:25.549Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-04-29T13:40:26.189Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-04-29T13:40:26.189Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project uberkenny-e7a3a (uberkenny) 
+[info] 
+=== Firestore Setup
+[debug] [2024-04-29T13:40:27.637Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/uberkenny-e7a3a/services/firestore.googleapis.com [none]
+[debug] [2024-04-29T13:40:27.637Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/uberkenny-e7a3a/services/firestore.googleapis.com x-goog-quota-user=projects/uberkenny-e7a3a
+[debug] [2024-04-29T13:40:28.366Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/uberkenny-e7a3a/services/firestore.googleapis.com 200
+[debug] [2024-04-29T13:40:28.367Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/uberkenny-e7a3a/services/firestore.googleapis.com [omitted]
+[debug] [2024-04-29T13:40:28.367Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/uberkenny-e7a3a/databases/(default) [none]
+[debug] [2024-04-29T13:40:28.718Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/uberkenny-e7a3a/databases/(default) 200
+[debug] [2024-04-29T13:40:28.719Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/uberkenny-e7a3a/databases/(default) {"name":"projects/uberkenny-e7a3a/databases/(default)","uid":"9c0e6801-7424-4bc9-b43f-130383b025b0","createTime":"2024-04-29T13:20:39.421796Z","updateTime":"2024-04-29T13:20:39.421796Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-04-29T13:20:39.421796Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"INCp36vG54UDMOTO+PTB54UD"}
+[debug] [2024-04-29T13:40:28.719Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-04-29T13:40:28.719Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-29T13:40:28.719Z] > authorizing via signed-in user (pulleyblankjacob@gmail.com)
+[debug] [2024-04-29T13:40:28.719Z] [iam] checking project uberkenny-e7a3a for permissions ["firebase.projects.get"]
+[debug] [2024-04-29T13:40:28.720Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/uberkenny-e7a3a:testIamPermissions [none]
+[debug] [2024-04-29T13:40:28.720Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/uberkenny-e7a3a:testIamPermissions x-goog-quota-user=projects/uberkenny-e7a3a
+[debug] [2024-04-29T13:40:28.720Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uberkenny-e7a3a:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-29T13:40:28.913Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/uberkenny-e7a3a:testIamPermissions 200
+[debug] [2024-04-29T13:40:28.913Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/uberkenny-e7a3a:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-04-29T13:40:35.725Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/uberkenny-e7a3a/releases pageSize=10&pageToken=
+[debug] [2024-04-29T13:40:35.939Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/uberkenny-e7a3a/releases 200
+[debug] [2024-04-29T13:40:35.939Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/uberkenny-e7a3a/releases {"releases":[{"name":"projects/uberkenny-e7a3a/releases/cloud.firestore","rulesetName":"projects/uberkenny-e7a3a/rulesets/61ebbbbb-59a7-4a70-b59d-54c9bbf04ef6","createTime":"2024-04-29T13:20:41.274736Z","updateTime":"2024-04-29T13:20:41.274736Z"},{"name":"projects/uberkenny-e7a3a/releases/firebase.storage/uberkenny-e7a3a.appspot.com","rulesetName":"projects/uberkenny-e7a3a/rulesets/d4063e73-8a4e-4750-894a-f90cb962d6ed","createTime":"2024-04-29T13:21:11.706772Z","updateTime":"2024-04-29T13:21:11.706772Z"}]}
+[debug] [2024-04-29T13:40:35.939Z] Found ruleset: projects/uberkenny-e7a3a/rulesets/61ebbbbb-59a7-4a70-b59d-54c9bbf04ef6
+[debug] [2024-04-29T13:40:35.940Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/uberkenny-e7a3a/rulesets/61ebbbbb-59a7-4a70-b59d-54c9bbf04ef6 [none]
+[debug] [2024-04-29T13:40:36.068Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/uberkenny-e7a3a/rulesets/61ebbbbb-59a7-4a70-b59d-54c9bbf04ef6 200
+[debug] [2024-04-29T13:40:36.068Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/uberkenny-e7a3a/rulesets/61ebbbbb-59a7-4a70-b59d-54c9bbf04ef6 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-04-29T13:40:38.686Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/uberkenny-e7a3a/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-04-29T13:40:38.689Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/uberkenny-e7a3a/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-04-29T13:40:39.018Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/uberkenny-e7a3a/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-04-29T13:40:39.019Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/uberkenny-e7a3a/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-04-29T13:40:39.307Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/uberkenny-e7a3a/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-04-29T13:40:39.307Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/uberkenny-e7a3a/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/uberkenny-e7a3a/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[debug] [2024-04-29T13:40:39.311Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/uberkenny-e7a3a [none]
+[debug] [2024-04-29T13:40:39.835Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/uberkenny-e7a3a 200
+[debug] [2024-04-29T13:40:39.836Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/uberkenny-e7a3a {"projectId":"uberkenny-e7a3a","projectNumber":"428669544858","displayName":"uberkenny","name":"projects/uberkenny-e7a3a","resources":{"hostingSite":"uberkenny-e7a3a","realtimeDatabaseInstance":"uberkenny-e7a3a-default-rtdb","storageBucket":"uberkenny-e7a3a.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_28a94243-7a6f-4cd9-ab98-265a6deaa4d5"}
+[info] 
+[info] i  Detected a .git folder at C:\Users\ICS4U-Jacob\Documents\test\Uberkenny 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=468391877&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-04-29T13:42:43.352Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-04-29T13:42:43.352Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-04-29T13:42:43.933Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-04-29T13:42:43.933Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-04-29T13:42:44.197Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-04-29T13:42:44.527Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-04-29T13:42:44.527Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"jacobpulleyblank","id":139926269,"node_id":"U_kgDOCFca_Q","avatar_url":"https://avatars.githubusercontent.com/u/139926269?v=4","gravatar_id":"","url":"https://api.github.com/users/jacobpulleyblank","html_url":"https://github.com/jacobpulleyblank","followers_url":"https://api.github.com/users/jacobpulleyblank/followers","following_url":"https://api.github.com/users/jacobpulleyblank/following{/other_user}","gists_url":"https://api.github.com/users/jacobpulleyblank/gists{/gist_id}","starred_url":"https://api.github.com/users/jacobpulleyblank/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jacobpulleyblank/subscriptions","organizations_url":"https://api.github.com/users/jacobpulleyblank/orgs","repos_url":"https://api.github.com/users/jacobpulleyblank/repos","events_url":"https://api.github.com/users/jacobpulleyblank/events{/privacy}","received_events_url":"https://api.github.com/users/jacobpulleyblank/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":"Canada","email":null,"hireable":null,"bio":"A high school student with a passion for network security","twitter_username":null,"public_repos":2,"public_gists":0,"followers":0,"following":0,"created_at":"2023-07-18T21:53:16Z","updated_at":"2024-04-25T12:46:30Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":815,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as jacobpulleyblank 
+[info] 
+[debug] [2024-04-29T13:42:53.508Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-04-29T13:42:53.791Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-04-29T13:42:53.791Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-04-29T13:43:08.794Z] >>> [apiv2][query] GET https://api.github.com/repos/jacobpulleyblank/uberkenny/actions/secrets/public-key type=owner
+[debug] [2024-04-29T13:43:08.984Z] <<< [apiv2][status] GET https://api.github.com/repos/jacobpulleyblank/uberkenny/actions/secrets/public-key 404
+[debug] [2024-04-29T13:43:08.985Z] <<< [apiv2][body] GET https://api.github.com/repos/jacobpulleyblank/uberkenny/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
